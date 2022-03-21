@@ -23,6 +23,7 @@ public class WareHouse {
 
     private boolean active = true;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
+//    @ManyToMany
     private Set<User> users;
 }
