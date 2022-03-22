@@ -6,8 +6,10 @@ import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Set;
 
-@Projection(types = WareHouse.class)
+@Projection(types = {WareHouse.class})
 public interface WarehouseProjection {
+
+    Integer getId();
 
     public String getName();
 
