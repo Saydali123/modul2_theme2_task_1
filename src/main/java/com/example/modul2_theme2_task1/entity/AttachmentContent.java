@@ -20,6 +20,6 @@ public class AttachmentContent {
     @Column(nullable = false)
     private byte[] bytes;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Attachment attachment;
 }

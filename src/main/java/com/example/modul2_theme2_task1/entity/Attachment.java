@@ -13,6 +13,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 public class Attachment {
+
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    AttachmentCollection attachmentCollection;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,6 +25,4 @@ public class Attachment {
     private Long size;
     private String contentType;
 
-    @ManyToOne
-    AttachmentCollection attachmentCollection;
 }
