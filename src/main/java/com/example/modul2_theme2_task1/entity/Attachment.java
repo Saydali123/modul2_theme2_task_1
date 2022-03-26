@@ -16,7 +16,7 @@ public class Attachment {
 
 
     @ManyToOne(cascade = CascadeType.ALL)
-    AttachmentCollection attachmentCollection;
+    private AttachmentCollection attachmentCollection;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

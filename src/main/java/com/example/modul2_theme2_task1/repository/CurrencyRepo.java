@@ -1,6 +1,5 @@
 package com.example.modul2_theme2_task1.repository;
 
-import com.example.modul2_theme2_task1.entity.AttachmentContent;
 import com.example.modul2_theme2_task1.entity.Currency;
 import com.example.modul2_theme2_task1.projection.CurrencyProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
